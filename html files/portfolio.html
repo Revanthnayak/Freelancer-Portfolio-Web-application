@@ -18,23 +18,52 @@
             border-radius: 5px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             background-color: #fff;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        /* Hover effect for the project container */
+        .project-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
         }
 
         /* Style the project name */
         .project-name {
             font-size: 24px;
             font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        /* Hover effect for the project name */
+        .project-container:hover .project-name {
+            color: #007BFF;
         }
 
         /* Style the project description */
         .project-description {
             margin-top: 10px;
             font-size: 16px;
+            transition: color 0.2s;
+        }
+
+        /* Hover effect for the project description */
+        .project-container:hover .project-description {
+            color: #333;
         }
 
         /* Style the button */
         .project-button {
             margin-top: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        /* Hover effect for the button */
+        .project-container:hover .project-button {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         /* Style the button link */
